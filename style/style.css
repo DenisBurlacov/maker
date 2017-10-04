@@ -1,0 +1,196 @@
+/*--------------------------
+fonts
+
+http://nomail.com.ua/font/raleway
+  https://fonts.google.com/?query=Yantramanav&selection.family=Yantramanav:900
+---------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:900");
+@font-face {
+  font-family: 'Raleway-Black';
+  src: local("Raleway-Black"), url("https://nomail.com.ua/files/woff/d641109f46a9231b7a92d6a114302a2b.woff") format("woff"); }
+@font-face {
+  font-family: 'Raleway-Light';
+  src: local("Raleway-Light"), url("https://nomail.com.ua/files/woff/6b562d7ca359ccb3259f570bcceb4f70.woff") format("woff"); }
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: local("Raleway-Regular"), url("https://nomail.com.ua/files/woff/2d4cd8722065da2ac700199273325752.woff") format("woff"); }
+@font-face {
+  font-family: 'Raleway-Lighter';
+  src: local("Raleway-ExtraLight"), url("https://nomail.com.ua/files/woff/ebd5c800e24e108dd3aeacb28e16c595.woff") format("woff"); }
+/*-----------------------------------
+colors
+-----------------------------------*/
+/*--------------------------
+vars
+---------------------------*/
+.wr {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  min-height: inherit; }
+
+.mission > .wr > .el-1 > .num, .projects .wr > .el-1 > .num, .team > .wr > .el-1 > .num {
+  display: flex;
+  position: relative;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: 'Yantramanav';
+  font-size: 256px;
+  font-weight: 900;
+  line-height: 0;
+  justify-content: center; }
+  .mission > .wr > .el-1 > .num:before, .projects .wr > .el-1 > .num:before, .team > .wr > .el-1 > .num:before {
+    content: attr(data-css);
+    position: absolute;
+    transform: rotate(-90deg);
+    color: white;
+    font-family: 'Raleway-Light';
+    font-size: 24px;
+    font-weight: 100; }
+
+.projects .wr > .el-1 > .letter, .team > .wr > .el-1 > .letter {
+  text-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+  color: rgba(25, 30, 63, 0.61);
+  font-family: 'Raleway-Black';
+  font-size: 600px;
+  font-weight: 900;
+  line-height: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  height: 100%;
+  min-height: 100%;
+  color: white;
+  background: #191e3f; }
+
+section {
+  position: relative;
+  min-height: 100vh; }
+
+header {
+  position: relative;
+  min-height: 100vh;
+  background: no-repeat center / cover; }
+  header:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    background: linear-gradient(to top, #191e3f, transparent); }
+  header > .wr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    header > .wr > .row-1 {
+      text-align: center;
+      flex-basis: 100%;
+      padding: 84px 0 0 0; }
+      header > .wr > .row-1 > .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        right: 0;
+        top: 111px;
+        width: 47px;
+        height: 17px; }
+        header > .wr > .row-1 > .menu:before, header > .wr > .row-1 > .menu:after {
+          content: '';
+          display: block;
+          height: 4px;
+          background: white; }
+    header > .wr > .row-2 h1 {
+      font-family: 'Raleway-Lighter';
+      font-size: 50px;
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.5); }
+
+.mission {
+  padding: 100px 0 200px 0;
+  box-sizing: border-box; }
+  .mission > .wr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mission > .wr > .el-1 {
+      position: absolute;
+      left: 0; }
+    .mission > .wr > .el-2 {
+      position: relative;
+      max-width: 660px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45); }
+      .mission > .wr > .el-2 img {
+        max-width: 100%; }
+      .mission > .wr > .el-2 .text {
+        color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        width: 360px;
+        left: 68%;
+        font-family: "Raleway-Light";
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 100; }
+
+.projects {
+  position: relative;
+  padding: 100px 0;
+  box-sizing: border-box;
+  background: no-repeat center / cover; }
+  .projects:before, .projects:after {
+    content: "";
+    position: absolute;
+    height: 20vh;
+    width: 100%; }
+  .projects:before {
+    background: linear-gradient(to bottom, #191e3f, transparent);
+    top: 0; }
+  .projects:after {
+    background: linear-gradient(to top, #191e3f, transparent);
+    bottom: 0; }
+  .projects .wr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .projects .wr > .el-1 {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .projects .wr > .el-1 > .letter {
+        line-height: .3; }
+      .projects .wr > .el-1 > .num {
+        align-self: flex-start; }
+    .projects .wr > .el-2 {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px; }
+      .projects .wr > .el-2 a {
+        display: block;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: calc(33% - 50px); }
+
+.team {
+  padding: 200px 0; }
+  .team > .wr > .el-1 {
+    position: absolute;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .team > .wr > .el-1 > .num {
+      left: 0;
+      position: absolute;
+      align-self: flex-start; }
+    .team > .wr > .el-1 > .letter {
+      text-shadow: 0 58px 165px rgba(0, 0, 0, 0.45); }
+
+/*# sourceMappingURL=style.css.map */
