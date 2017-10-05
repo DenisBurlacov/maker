@@ -21,11 +21,23 @@ $red: #d25a5e;
 /*--------------------------
 vars
 ---------------------------*/
+$medium: 768px;
+
+@mixin media($size){
+  @media(max-width: $size){
+    @content;
+  }
+}
+
 .wr{
   position: relative;
   max-width: 1170px;
   margin: 0 auto;
   min-height: inherit;
+
+  @include media($medium){
+    padding: 0 30px;
+  }
 }
 
 %num{
@@ -59,3 +71,4 @@ vars
   line-height: 0;
 
 }
+

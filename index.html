@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 <body>
-<header style="background-image: url(./img/mountains-header.png) ">
+<header style="background-image: url(./img/mountains-header.png)" data-parallax='{"backgroundPositionY": "20%"}'>
 	<div class="wr">
 		<div class="row-1">
 			<a href="#" class="logo">
@@ -19,16 +19,16 @@
 			<a href="#" class="menu"></a>
 		</div>
 		<div class="row-2">
-			<h1>we build innovative companies</h1>
+			<h1 data-parallax='{"scale":{"from":0.8,"to":1},"y":{"from":"-5%","to":"2%"}}'>we build innovative companies</h1>
 		</div>
 	</div>
 </header>
 <section class="mission">
 	<div class="wr">
 		<div class="el-1">
-			<div class="num" data-css="mission">01</div>
+			<div class="num" data-css="mission" data-parallax='{"scale":{"from":0.8,"to":1},"x":{"from":"-5%","to":"0%"}}'>01</div>
 		</div>
-		<div class="el-2">
+		<div class="el-2" data-parallax='{"scale":{"from":0.8,"to":1},"x":{"from":"5%","to":"0%"}}'>
 				<img src="./img/mountains%20(1).png" alt="">
 				<div class="text">
 					<p>Is allowance instantly strangers applauded discourse so.
@@ -43,8 +43,8 @@
 <section class="projects" style="background-image: url(./img/projects-background.png)">
 	<div class="wr">
 		<div class="el-1">
-			<div class="letter">R</div>
-			<div class="num" data-css="projects">02</div>
+			<div class="letter" data-parallax='{"scale":{"from":0.8,"to":1},"x":{"from":"-5%","to":"3%"}}'>R</div>
+			<div class="num" data-css="projects" data-parallax='{"scale":{"from":0.8,"to":1},"y":{"from":"-5%","to":"5%"}}'>02</div>
 		</div>
 		<div class="el-2">
 			<a href="#"><img src="./img/links1.png" alt=""></a>
@@ -59,7 +59,7 @@
 <section class="team">
 	<div class="wr">
 		<div class="el-1">
-			<div class="num" data-css="team">03</div>
+			<div class="num" data-css="team" data-parallax='{"scale":{"from":0.8,"to":1},"y":{"from":"5%","to":"20%"}}'>03</div>
 			<div class="letter">T</div>
 		</div>
 		<div class="el-2">
@@ -83,7 +83,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li data-parallax='{"x":{"from":"-5%","to":"5%"}}'>
 					<div class="photo">
 						<img src="./img/photo-2.png" alt="">
 						<div class="info">
@@ -93,7 +93,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li data-parallax='{"x":{"from":"5%","to":"-5%"}}'>
 					<div class="photo">
 						<img src="./img/photo-3.png" alt="">
 						<div class="info">
@@ -103,7 +103,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li data-parallax='{"x":{"from":"-5%","to":"5%"}, "duration":800}'>
 					<div class="photo">
 						<img src="./img/photo-4.png" alt="">
 						<div class="info">
@@ -113,7 +113,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li data-parallax='{"x":{"from":"5%","to":"-5%"}, "duration":500}'>
 					<div class="photo">
 						<img src="./img/photo-5.png" alt="">
 						<div class="info">
@@ -130,8 +130,8 @@
 <section class="event" style="background-image: url(./img/EVENT.png)">
 	<div class="wr">
 		<div class="el-1">
-			<div class="num" data-css="event">04</div>
-			<div class="letter">E</div>
+			<div class="num" data-css="event" data-parallax='{"scale":{"from":0.8,"to":1},"x":{"from":"-5%","to":"2%"}}'>04</div>
+			<div class="letter" data-parallax='{"scale":{"from":0.8,"to":1},"y":{"from":"-10%","to":"5%"}}'>E</div>
 		</div>
 		<div class="el-2">
 			<h2>Feel emotions</h2>
@@ -155,5 +155,8 @@
 	</div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.requestAnimationFrame.min.js"></script>
+<script type="text/javascript" src="script/jquery.data-parallax.js"></script>
 </body>
 </html>
